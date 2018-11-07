@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[a4paper, total={6in, 10.5in}]{geometry}
+\date{}
+\author{}
+\title{SI 3: Midterm 1 Review}
+\begin{document}
+\maketitle
+\section{Sets}
+\textbf{Consider the following sets:}
+\begin{itemize}
+\item $A: \{1,2,3,4,5\}$
+\item $B: \{2,3,4\}$
+\item $C: \{\{2\},\{3\},\{4\}\}$
+\item $D: \{Red, Green, Blue\}$
+\end{itemize}
+\textbf{Define the Following:}
+\begin{enumerate}
+\item$B\times D$
+\item$D\times B$
+\item $ \mathcal{P}(B)$
+\end{enumerate}
+\textbf{Answer True or False for the following:}
+\begin{enumerate}
+\item$B\in A$
+\item$B\subseteq A$
+\item$C\subseteq A$
+\item$A\subseteq A$
+\item$A\in A$
+\item$2\in C$
+\item$A\in \mathbb{N}$
+\item$A \subseteq \mathbb{N}$
+\item$C \subseteq \mathbb{N}$
+\item$\mathcal{P}(B)\in B$
+\item$B \in \mathcal{P}(B)$
+\item$B\subseteq\mathcal{P}(B)$
+\item$\emptyset \in B$
+\item$\emptyset \subseteq B$
+\item$\emptyset \in \mathcal{P}(B)$
+\item$\emptyset \subseteq \mathcal{P}(B)$
+\end{enumerate}
+\newpage
+\section{Functions}
+\subsection{Identifying Co-Domains, Domains, and basic \\function properties}
+\textbf{Identify Domain and Co-Domain}
+\begin{enumerate}
+\item$f:A\to B$
+\item$ f(x)=x^2$
+\item$ f(x)= \sum_{k=1}^x k$
+\item$ f \circ g ;$ $ f:B\to C ; g: A \to B$
+\end{enumerate}
+\textbf{Find a function with the following properites:}
+\begin{enumerate}
+\item$f:\mathbb{N}\to\mathbb{R}$, 1-1, not onto
+\item$f:\mathbb{R}\to\mathbb{N}$, onto, not 1-1
+\item$f:\mathbb{N}\to \{True, False\}$, not 1-1, onto
+\item$\mathbb{N}\to\{\bullet\}$, not 1-1, onto
+\end{enumerate}
+\textbf{Is is possible to make $f(x)=\sqrt{x}$ a total function (i.e. a function defined across its entire Domain)? If so, how?}
+\subsection{Using Function Definitions}
+\begin{align*}
+f(m^\curvearrowright)&=(m^\curvearrowright)+f(m)\\
+f(0)&=0
+\end{align*}
+\textbf{Find $f(5)$, show steps}\\
+\newline
+\textbf{You have seen this function before, what does it usually look like?}
+\newpage
+\section{Inductive Proofs}
+\subsection{Fill-in-Blanks}
+Prove: $m(n+p)=m\cdot n + m\cdot p$
+\begin{proof}
+$\bullet [Basis]: 0(n+p)=0\cdot n +0\cdot p  $
+\begin{align*}
+0\cdot n +0\cdot p&=0+0&&\text{$0$ is an annihilator}\\
+&=0&&\text{\underline{\hspace{3cm}}}\\
+&=0(n+p)&&\text{$0$ is an annihilator}\\
+\end{align*}
+$\bullet[IH]: \exists{k} \text{\hspace{0.2cm}}s.t.\text{\hspace{0.2cm}} k(n+p)=k\cdot n+k\cdot p$\\
+$\bullet[IS]$: We need to show that \underline{\hspace{3cm}}
+\begin{align*}
+(k^\curvearrowright)(n+p)&=(n+p)+k(n+p) &&\text{Definition of Multiplication}\\
+&=\text{\underline{\hspace{3cm}}}&&\text{IH}\\
+&=n+k\cdot n+p+k\cdot p &&\text{Commutativity of Addition}\\
+&=(k^\curvearrowright)n+(k^\curvearrowright)p &&\text{\underline{\hspace{3cm}}}
+\end{align*}
+\end{proof}
+\subsection{Writing Proofs}
+\paragraph{Prove:}$\sum_{i=0}^n 4^i=\frac{4^{n+1}-1}{3}$ \hspace{3cm} $ \forall n\in\{x\in\mathbb{N}|x>0\}$
+\end{document}

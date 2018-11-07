@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{LCD, GCD, and Bezout's Theorem}
+\begin{document}
+	\maketitle
+	\section{Euclid's Algorithm}
+	\textbf{Euclid's Algorithm for finding GDC is as follows:}
+	\begin{align*}
+	gcd(0,n)&=n\\
+	gcd(m,n)&=gcd(n\%m,m) &&\text{for any $m>0$}
+	\end{align*}
+	\textbf{Calculate the following GCD's using Euclid's Algorithm, show steps:}
+	\begin{enumerate}
+		\item $gcd(3,9)$
+		\item $gcd(0,24)$
+		\item $gcd(436,559)$
+		\item $gcd(5,525)$
+		\item $gcd(123456789,123456790)$
+	\end{enumerate}
+	\section{Proofs regarding gcd and lcm}
+	\textbf{Recall the definition of $fib(n)$}
+	\begin{align*}
+		fib(0)&=0\\
+		fib(1)&=1\\
+		fib(k^{\curvearrowright \curvearrowright})&=fib(k^\curvearrowright)+fib(k)
+	\end{align*}
+	\textbf{Construct a table of the first 10 values for the following algorithm:}
+	\begin{enumerate}[resume]
+		\item$gcd(fib(n^\curvearrowright),fib(n))$ 
+	\end{enumerate}
+	\textbf{Prove the Following:}
+	\begin{enumerate}[resume]
+		\item $gcd(fib(n^\curvearrowright),fib(n))=1$ for any $n\in\mathbb{N}$
+		\item $n \cdot m = gcd(n,m)\cdot lcm(m,n)$
+	\end{enumerate}
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{Modular Arithmetic, Min, Max, and a Review of Strong Induction}
+\begin{document}
+	\maketitle
+	\section{Modular Arithmetic}
+	\textbf{For the next few problems you will need to recall a few facts of the Gregorian calendar}
+	\\
+	\\Leap years occur every 4th year, except for years ending in 00.\\
+	The following months have 30 days: September, April, June, November\\
+	February has 28 days on common years, 29 on leap years\\
+	All other months have 31 days\\
+	\\
+	\textbf{Find the day of the week for the following dates}
+	\begin{enumerate}
+		\item 10/22/21
+		\item 12/10/46
+		\item 11/9/2118
+	\end{enumerate}
+	\section{Strong induction}
+	\begin{enumerate}[resume]
+		\item Show that for any natural numbers, $m$ and $m\cdot n +1$ are always relatively prime given $m\neq1$
+	\end{enumerate}
+	\section{Min and Max}
+	\textbf{Consider the following definitions}
+	\begin{align*}
+	p\leq m \to n \:\:\:&\text{if and only if}\:\:\: min(p,m)\leq n\\
+	m \:\theta\: n \leq p\:\:\: &\text{if and only if}\:\:\: m\leq max(n,p) 
+	\end{align*}
+	\begin{enumerate}[resume]
+		\item Prove using the definitions of $\theta$ and $\to$: $max(m,min(n,p))=min(max(m,n),max(m,p))$
+	\end{enumerate}
+\end{document}

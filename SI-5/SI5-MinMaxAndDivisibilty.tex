@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{SI 5: Min, Max and Division}
+
+\begin{document}
+	\maketitle
+	\section{Definitions of $min()$ and $max()$}
+	\textbf{Define $max()$ as: $max(n,m)=p$ iff}
+	\begin{align*}
+		&m\le p \:\:\&\:\: n\le p\\
+		&\forall{q\in\mathbb{R}},\text{ if } m\le q \:\:\&\:\: n\le q,\:\:p\le q
+	\end{align*}
+	\newline
+	\textbf{Define $min()$ as: $min(n,m)=p$ iff}
+	\begin{align*}
+	& p \le m \:\: \& \:\: p \le n\\
+	&\forall{q\in\mathbb{R}},\text{ if } q \le m \:\: \& \:\: q \le n,\:\:q \le p
+	\end{align*}
+	\newline
+	For the following: Use the definitions to explain why the statement is false.
+	\begin{enumerate}
+		\item $min(3,4)=4$
+		\item $max(3,4)=5$
+		\item $max(\pi, 3)=3$
+		\item $min(12.32,12.3)=11$
+	\end{enumerate}
+	
+	\section{Divisibility}
+	\begin{enumerate}[resume]
+		\item Come up with a formal definition for ``divides", namely, $m|n \iff\underline{\hspace{3cm}}$
+	\end{enumerate}
+	\textbf{Prove the following:}
+	\begin{enumerate}[resume]
+		\item if $ m|n$, then $m|np$ $ \forall{p \in \mathbb{R}}$
+		\item if $m|n$ and $m|p$, then $m|n+p$
+		\item if $m|n$, then $m|p \iff m|n+p$
+	\end{enumerate} 
+
+
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\date{}
+\author{}
+\title{SI 9: MinMax/Heyting Arrow Proof and Some Intuition on Sets}
+\begin{document}
+\maketitle
+\section{Min and Max}
+	\textbf{Consider the following definitions}
+	\begin{align*}
+	p\leq m \to n \:\:\:&\text{if and only if}\:\:\: min(p,m)\leq n\\
+	m \:\theta\: n \leq p\:\:\: &\text{if and only if}\:\:\: m\leq max(n,p) 
+	\end{align*}
+	\begin{enumerate}[resume]
+		\item Prove using the definitions of $\theta$ and $\to$: $max(m,min(n,p))=min(max(m,n),max(m,p))$
+	\end{enumerate}
+\section{Drawing Sets}
+\textbf{Draw Diagrams for the following statements. Draw one diagram each for the cases:} $A=B$; $A\neq B$ but $A\cap B\neq \emptyset$; and $A\cap B=\emptyset$:
+	\begin{enumerate}
+		\item $A\cup B$
+		\item $A\cap B$
+		\item $A\setminus B$
+		\item $A\to B$
+	\end{enumerate}
+\end{document}
