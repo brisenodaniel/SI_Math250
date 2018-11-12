@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+\author{}
+\date{}
+\title{SI 10: Set Theory and Logic}
+\begin{document}
+	\maketitle
+	\textbf{{Assume that all sets mentioned here are subsets of a set $X$.}
+	\section{Drawing Sets}
+	\textbf Draw Diagrams for the following: }
+	\begin{enumerate}
+		\item $(A \cup B) \cap C \to A \cup B$
+		\item $A \to (A \setminus B)$
+		\item $A \to (A\setminus B) \cap B$
+		\item $ (A \cup C) \setminus (A \cap C)$
+		\item$ (A \cap C) \setminus (A \cup C) \to (A \setminus B) \cap B$
+	\end{enumerate}
+	In logic, there is the concept of negation, denoted by the operator ``$\neg$", and it is read as ``not". So ``$\neg A$" is read as ``not $A$". Now, using only previously defined operators:
+	\begin{enumerate}[resume]
+		\item Come up with a definition for $\neg$. In other words, $\neg A \iff ?$
+	\end{enumerate}
+	\section{Set Proofs}
+	\textbf{Using only the set rules defined on the next page, prove the following:}
+	\begin{enumerate}[resume]
+		\item $(A\cup B)\cup C = A \cup (B \cup C)$
+		\item $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+	\end{enumerate}
+\newpage
+	\section*{Set Rules}
+	\begin{enumerate}
+		\item $D \cup E \subseteq F \:\: \iff \:\: D\subseteq F\text{ and } E \subseteq F$
+		\item $D \subseteq E \cap F \:\: \iff \:\: D\subseteq E \text { and } D \subseteq F$
+		\item $D \subseteq E \cup F \:\: \iff \:\: D \setminus E \subseteq F$
+		\item $\cup$ and $\cap$ are commutative
+	\end{enumerate}
+\end{document}
